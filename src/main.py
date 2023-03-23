@@ -26,4 +26,13 @@ third_page = tk.Frame(root)
 third_page.pack(side="left", fill="both", expand=True)
 third_page.pack_forget()
 
+# functions to change pages
+def go_second_page():
+    main_page.pack_forget()
+    second_page.pack(side="left", fill="both", expand=True)
+
+def go_back():
+    main_page.pack(side="left", fill="both", expand=True)
+    second_page.pack_forget(), third_page.pack_forget()
+
 root.mainloop()
