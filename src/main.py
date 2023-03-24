@@ -47,5 +47,24 @@ question.place(relx=0.5, rely=0.22, anchor="n")
 go_lottery_button = tk.Button(main_page, text="Use ticket", font="Arial 18 bold", height=2, width=15, command=go_second_page)
 go_lottery_button.place(relx=0.5, rely=0.5, anchor="n")
 
+# elements in the second page (lottery page):
+
+number_selection = tk.Frame(second_page, pady=130)
+number_selection.place(relx=0.5, rely=0.5, anchor="center")
+
+instruction_2 = tk.Label(second_page, text="Try to guess the secret number! \n You can only celebrate if you get it right", font="Arial 14 bold")
+instruction_2.place(relx=0.5, rely=0.1, anchor="n")
+
+instruction_3 = tk.Label(number_selection, text="Choose your number", font="Arial 12")
+button1 = tk.Button(number_selection, text="1", font="Arial 16", height=1, width=2)
+button2 = tk.Button(number_selection, text="2", font="Arial 16", height=1, width=2)
+button3 = tk.Button(number_selection, text="3", font="Arial 16", height=1, width=2)
+instruction_3.grid(row=0, columnspan=5, pady=5)
+button1.grid(row=1, column=0, padx=1)
+button2.grid(row=1, column=1, padx=1)
+button3.grid(row=1, column=2, padx=1)
+
+go_back_button = tk.Button(second_page, text="Back", font="Arial 12", command=go_back)
+go_back_button.place(relx=0.5, rely=0.95, anchor="s")
 
 root.mainloop()
