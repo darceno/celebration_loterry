@@ -65,4 +65,15 @@ button3.grid(row=1, column=2, padx=1)
 go_back_button = tk.Button(second_page, text="Back", font="Arial 12", command=go_back)
 go_back_button.place(relx=0.5, rely=0.95, anchor="s")
 
+# elements in the third page (result page):
+result_title = tk.Label(third_page, text="The secret number is...", font="Arial 18 bold")
+result_title.place(relx=0.5, rely=0.1, anchor="n")
+result_frame = tk.LabelFrame(third_page, background="white", border=0)
+result_frame.place(relx=0.5, rely=0.4, anchor="center")
+result_screen = tk.Label(result_frame, text="42", height=3, width=10, font= "Arial 24 bold", background="white")
+result_screen.pack(anchor="center")
+result_reveal = tk.Label(third_page, text="Congratulations, you got it! \n Celebrate your accomplishment!", font="Arial 24 bold")
+result_reveal.place(relx=0.5, rely=0.8, anchor="s")
+
+
 root.mainloop()
