@@ -35,8 +35,7 @@ def go_back():
     main_page.pack(side="left", fill="both", expand=True)
     second_page.pack_forget(), third_page.pack_forget()
 
-# elements in the main page:
-
+# elements in the main page
 welcome = tk.Label(main_page, text="Welcome to the Celebration Lottery!", font="Arial 18 bold")
 welcome.place(relx=0.5, rely=0.1, anchor="n")
 
@@ -47,8 +46,7 @@ question.place(relx=0.5, rely=0.22, anchor="n")
 go_lottery_button = tk.Button(main_page, text="Use ticket", font="Arial 18 bold", height=2, width=15, command=go_second_page)
 go_lottery_button.place(relx=0.5, rely=0.5, anchor="n")
 
-# elements in the second page (lottery page):
-
+# elements in the second page (lottery page)
 number_selection = tk.Frame(second_page, pady=130)
 number_selection.place(relx=0.5, rely=0.5, anchor="center")
 
